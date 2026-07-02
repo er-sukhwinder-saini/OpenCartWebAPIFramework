@@ -8,6 +8,7 @@ export class HomePage extends BasePage {
     //private Locators: 
     private readonly logoutLink: Locator;
     private readonly headers: Locator;
+    private readonly dummy: Locator;
 
 
 
@@ -16,6 +17,8 @@ export class HomePage extends BasePage {
         super(page);
         this.logoutLink = page.getByRole('link', { name: 'Logout' });
         this.headers = page.getByRole('heading', { level: 2 });
+        this.dummy = page.getByRole('heading', { level: 100 });
+
 
     };
 
