@@ -8,7 +8,6 @@ export class HomePage extends BasePage {
     //private Locators: 
     private readonly logoutLink: Locator;
     private readonly headers: Locator;
-    private readonly dummy: Locator;
 
 
 
