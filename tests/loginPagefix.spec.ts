@@ -1,9 +1,10 @@
 
-import { test, expect } from '../src/fixtures/pagefixture';
-import { test as dataset } from '../src/fixtures/sukhitestdata.fixture';
+import { test, expect } from '../src/fixtures/pagefixture'
 
+// import { test as dataset } from '../src/fixtures/sukhitestdata.fixture';
 import { CsvHelper } from '../src/utils/CSVHelper';
 import { JsonHelper } from '../src/utils/JsonHelper';
+
 
 
 test.beforeEach(async ({ loginPage }) => {
@@ -75,13 +76,12 @@ for (let row of loginJSONData) {
 
 
 
-
-    dataset('login-page-title-test111111111111', async ({ mytestData}) => {
-        console.log(mytestData.age);
-
+// dataset(`login-page-title_agai`, async ({ mytestData }) => {
+//         console.log(mytestData.age);
 
 
-});
+
+// });
 
 
 
