@@ -24,9 +24,9 @@ export class HomePage extends BasePage {
 
     //added in base page
 
-    // async getHomePageTitle(): Promise<string> {
-    //     return await this.page.title();
-    // }
+    async getHomePageTitle(): Promise<string> {
+        return await this.page.title();
+    }
 
     async isLogoutLinkExist(): Promise<boolean> {
         return await this.logoutLink.isVisible();

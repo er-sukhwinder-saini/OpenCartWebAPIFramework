@@ -36,7 +36,7 @@ test('log_out_link_exist', async () => {
 
 test('header_exist', async () => {
 
-    let pageHeader = await homePage.getHomePageHeader();
+    let pageHeader = await homePage.getHomePageHeaders();
     console.log("Page Header is" + pageHeader);
 
     expect(pageHeader).toHaveLength(4);
